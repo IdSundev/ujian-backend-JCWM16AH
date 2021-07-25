@@ -1,16 +1,21 @@
 {
-  "name": "ujian-backend-jcwm16ah",
+  "name": "rest-api-node-mysql",
   "version": "1.0.0",
-  "description": "",
+  "description": "Latihan Rest API dengan Node JS dan MySQL",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Cef Syarif",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "universal-cookie": "^4.0.4"
   }
 }

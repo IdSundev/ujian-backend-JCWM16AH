@@ -1,0 +1,461 @@
+{
+	"info": {
+		"_postman_id": "5c4e55b3-0c66-4c94-8867-2665f9a7b809",
+		"name": "REST Bioskop v2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "cefsyarif",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "cef.syarif@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "@Cefsyarif294",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user",
+							"value": "dewala",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "@dewala9911",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deactive",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMDA4MTc5OCIsInJvbGUiOjIsImlhdCI6MTYyNTYxMDQ4M30.-2mkCgWUNWbV94RlUqoeCvgIT6aDoOl7in2xgEHAhsw",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/user/deactive",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"user",
+						"deactive"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Active",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMDA4MTc5OCIsInJvbGUiOjIsImlhdCI6MTYyNTYxMDU2MX0.bV39LNRlps4z800Jzb7EAsV0BL2GU_4bDO71ZAaL4sk",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/user/activate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"user",
+						"activate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Closed",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMDA4MTc5OCIsInJvbGUiOjIsImlhdCI6MTYyNTYxMDU2MX0.bV39LNRlps4z800Jzb7EAsV0BL2GU_4bDO71ZAaL4sk",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/user/close",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"user",
+						"close"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/movies/get/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"movies",
+						"get",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Movies On Show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/movies/get?status=on%20show",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"movies",
+						"get"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "on%20show"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Movies By Location",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/movies/get?location=bandung",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"movies",
+						"get"
+					],
+					"query": [
+						{
+							"key": "location",
+							"value": "bandung"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Movie By Time",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "time",
+							"value": "9 am",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/movies/get?time=9%20AM",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"movies",
+						"get"
+					],
+					"query": [
+						{
+							"key": "time",
+							"value": "9%20AM"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Movie By Status Location and Time",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/movies/get?status=on%20show&location=bandung&time=9%20AM",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"movies",
+						"get"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "on%20show"
+						},
+						{
+							"key": "location",
+							"value": "bandung"
+						},
+						{
+							"key": "time",
+							"value": "9%20AM"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Movie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Test",
+							"type": "text"
+						},
+						{
+							"key": "genre",
+							"value": "Action",
+							"type": "text"
+						},
+						{
+							"key": "release_date",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "release_month",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "release_year",
+							"value": "2021",
+							"type": "text"
+						},
+						{
+							"key": "duration_min",
+							"value": "180",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Lorem Ipsum is dolor sis amet",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI5OTUyNjAzIiwicm9sZSI6MSwiaWF0IjoxNjI1NjE3ODE2fQ.0l5TLbaRQCCLudB013rW0C0AGxnweflnhYfomjnjcYM",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3001/movies/add",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"movies",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Status Movie",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "status",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI5OTUyNjAzIiwicm9sZSI6MSwiaWF0IjoxNjI1NjE3ODE2fQ.0l5TLbaRQCCLudB013rW0C0AGxnweflnhYfomjnjcYM",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/movies/edit/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"movies",
+						"edit",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Schedules",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "location_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "time_id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI5OTUyNjAzIiwicm9sZSI6MSwiaWF0IjoxNjI1NjE3ODE2fQ.0l5TLbaRQCCLudB013rW0C0AGxnweflnhYfomjnjcYM",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/movies/set/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"movies",
+						"set",
+						"10"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

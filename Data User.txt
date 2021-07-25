@@ -1,0 +1,35 @@
+User1
+=====
+username: cefsyarif
+email: cef.syarif@mail.com
+password: @Cefsyarif294
+
+User2
+=====
+username: vincent
+email: vincent@mail.com
+password: @Vincent294
+
+User3
+=====
+username: gregory
+email: gregory@mail.com
+password: @Gregory294
+
+User4
+=====
+username: haryojcwmah
+email: haryo@mail.com
+password: @Haryo294
+
+User5
+=====
+username: vellajcwmah
+email: vella@mail.com
+password: @Haryo294
+
+User5
+=====
+username: erikjcwmah
+email: erik@mail.com
+password: @Haryo294
